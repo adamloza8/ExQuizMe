@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "176223101280",
+    "project_id": "exquizmee-5f556",
+    "storage_bucket": "exquizmee-5f556.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:176223101280:android:1b691aeaa7c6e033b97e05",
+        "android_client_info": {
+          "package_name": "com.example.quizjava"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "176223101280-2s8h03shsg5e8fo6rk8aot24tn6n651n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjI0VS1w3VYXP9LrzgMqqYfnqxbMl6UIE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "176223101280-2s8h03shsg5e8fo6rk8aot24tn6n651n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
