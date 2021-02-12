@@ -47,7 +47,7 @@ public class QuizFragment extends Fragment implements View.OnClickListener{
     Button optiona, optionb, optionc,optiond, nextButton;
     TextView questionText, quizTitleText, questionTimeProgressText, answerFeedbackText;
     ImageButton backbutton;
-
+    TextView timertext;
 
     ProgressBar progressBar;
     FirebaseAuth firebaseAuth;
@@ -93,12 +93,13 @@ public class QuizFragment extends Fragment implements View.OnClickListener{
         questionTimeProgressText = view.findViewById(R.id.timertext);
         answerFeedbackText = view.findViewById(R.id.quizanswerfeedback);
         progressBar = view.findViewById(R.id.quizProgressBar);
+        timertext = view.findViewById(R.id.timertext);
 
         optiona = view.findViewById(R.id.optiona);
         optionb = view.findViewById(R.id.optionb);
         optionc = view.findViewById(R.id.optionc);
         nextButton = view.findViewById(R.id.quiznext);
-        backbutton = view.findViewById(R.id.cancelbutton);
+//        backbutton = view.findViewById(R.id.cancelbutton);
 
 
         // updating the variables
@@ -174,7 +175,7 @@ public class QuizFragment extends Fragment implements View.OnClickListener{
     private void LoadUi() {
 
         quizTitleText.setText(quizName);
-        questionText.setText("Loading Question");
+        questionText.setText("Ładowanie pytań");
 
         EnableOptions();
         LoadQuestion(1);
@@ -240,6 +241,7 @@ public class QuizFragment extends Fragment implements View.OnClickListener{
         optiona.setVisibility(View.VISIBLE);
         optionb.setVisibility(View.VISIBLE);
         optionc.setVisibility(View.VISIBLE);
+        timertext.setVisibility(View.VISIBLE);
         nextButton.setVisibility(View.INVISIBLE);
         nextButton.setEnabled(false);
 
@@ -413,7 +415,7 @@ public class QuizFragment extends Fragment implements View.OnClickListener{
 
         // if you have completed the quiz
         if (currentQuestion == totalNumberOfQuestions) {
-            nextButton.setText("Go to Results");
+            nextButton.setText("Zobacz wynik");
 
 
         }

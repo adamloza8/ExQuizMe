@@ -2,11 +2,11 @@
     <!-- Base application theme. -->
     <style name="Theme.QuizJava" parent="Theme.MaterialComponents.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">#FDD835</item>
+        <item name="colorPrimaryDark">#FDD835</item>
         <item name="colorAccent">@color/colorAccent</item>
 
         <item name="android:windowTranslucentStatus">true</item>
-        <item name="android:navigationBarColor">@color/colorPrimaryDark</item>        <!-- Customize your theme here. -->
+        <item name="android:navigationBarColor">#FDD835</item>        <!-- Customize your theme here. -->
     </style>
 </resources>

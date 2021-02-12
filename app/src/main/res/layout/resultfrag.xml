@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
+    android:background="@color/black"
     >
 
 
@@ -133,18 +133,18 @@
         app:layout_constraintTop_toBottomOf="@+id/results_wrong_text"
         android:layout_marginRight="32dp" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/results_home_btn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="32dp"
-        android:background="@drawable/primary_btn_bg"
         android:fontFamily="@font/work_sans"
         android:text="Wróć do menu"
         android:textAllCaps="false"
-        android:textColor="@android:color/white"
+        android:background="#FDD835"
+        android:textColor="@android:color/black"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

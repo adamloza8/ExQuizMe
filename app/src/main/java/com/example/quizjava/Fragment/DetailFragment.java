@@ -95,7 +95,7 @@ public class DetailFragment extends Fragment implements View.OnClickListener {
                 question.setText(quizModels.get(position).getQuestion()+"");
                 level.setText(quizModels.get(position).getLevel());
 
-                Glide.with(getContext()).load(quizModels.get(position).getImage())
+                Glide.with(getContext()).load(quizModels.get(position).getImage())     //Wyświetlenie obrazu dla kategorii
                         .placeholder(R.drawable.placeholder_image)
                         .centerCrop().into(imageView);
 
@@ -115,7 +115,7 @@ public class DetailFragment extends Fragment implements View.OnClickListener {
     private void LoadRECENTResult() {
 
         FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
-        FirebaseUser user  = firebaseAuth.getCurrentUser();
+        FirebaseUser user  = firebaseAuth.getCurrentUser();                              //Pobranie poprzedniego wyniku
         FirebaseFirestore firebaseFirestore = FirebaseFirestore.getInstance();
 
 
