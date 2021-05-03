@@ -46,14 +46,14 @@ public class DetailFragment extends Fragment implements View.OnClickListener {
 
 
     public DetailFragment() {
-        // Required empty public constructor
+        // Pusty publiczy konstruktor
     }
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+        // Inflate układu dla tego fragmentu
         return inflater.inflate(R.layout.detailfrag, container, false);
     }
 
@@ -100,7 +100,7 @@ public class DetailFragment extends Fragment implements View.OnClickListener {
                         .centerCrop().into(imageView);
 
 
-                // we are sending these two values into the quiz fragment
+                // Wysyłanie dwóch wartości do fragmentu quiz
                 quizID = quizModels.get(position).getQuizid();
                 quizName = quizModels.get(position).getQuizname();
                 totalQuestions = quizModels.get(position).getQuestion();
@@ -139,7 +139,7 @@ public class DetailFragment extends Fragment implements View.OnClickListener {
 
                         DocumentSnapshot snapshot = task.getResult();
 
-                        // if there are no results in firestore to show you
+                        // W przypadku braku poprzednich wyników do wyświetlenia:
                         if (snapshot.exists() && snapshot!= null) {
 
 

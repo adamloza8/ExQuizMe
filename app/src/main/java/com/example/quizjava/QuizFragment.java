@@ -69,12 +69,12 @@ public class QuizFragment extends Fragment implements View.OnClickListener{
 
 
     public QuizFragment() {
-        // Required empty public constructor
+        // Pusty konstruktor publiczny
     }
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+        // Tworzenie layoutu dla fragmentu
         return inflater.inflate(R.layout.quizfrag, container, false);
     }
 
@@ -87,7 +87,7 @@ public class QuizFragment extends Fragment implements View.OnClickListener{
         firebaseFirestore = FirebaseFirestore.getInstance();
 
 
-        // UI initialization
+        // Inicjalizacja UI
         questionText = view.findViewById(R.id.quizquestion);
         quizTitleText = view.findViewById(R.id.quiztitlequiz);
         questionTimeProgressText = view.findViewById(R.id.timertext);
@@ -99,10 +99,9 @@ public class QuizFragment extends Fragment implements View.OnClickListener{
         optionb = view.findViewById(R.id.optionb);
         optionc = view.findViewById(R.id.optionc);
         nextButton = view.findViewById(R.id.quiznext);
-//        backbutton = view.findViewById(R.id.cancelbutton);
 
 
-        // updating the variables
+        // uaktualnianie zmiennych
 
         quizid = QuizFragmentArgs.fromBundle(getArguments()).getQuizid();
         totalNumberOfQuestions = QuizFragmentArgs.fromBundle(getArguments()).getTotalNumberOfQuestion();
@@ -120,7 +119,7 @@ public class QuizFragment extends Fragment implements View.OnClickListener{
         } else {
 
 
-            // go back to homefragment
+            // powrót od głównego ekranu
         }
 
 
@@ -275,7 +274,7 @@ public class QuizFragment extends Fragment implements View.OnClickListener{
 
             case R.id.quiznext:
 
-                // if you have completed the quiz
+                // po ukończeniu quizu
 
 
                 if (currentQuestion == totalNumberOfQuestions) {
@@ -376,7 +375,7 @@ public class QuizFragment extends Fragment implements View.OnClickListener{
 
                 correctAnswer++;
 
-                selectedButton.setBackgroundColor(getResources().getColor(R.color.pink, null));
+                selectedButton.setBackgroundColor(getResources().getColor(R.color.yellow, null));
                 answerFeedbackText.setText("Odpowiedź poprawna");
                 answerFeedbackText.setTextColor(getResources().getColor(R.color.white, null));
 
@@ -413,7 +412,7 @@ public class QuizFragment extends Fragment implements View.OnClickListener{
 
     private void showNextButton() {
 
-        // if you have completed the quiz
+        // Po odpowiedzeniu na wszystkie pytania
         if (currentQuestion == totalNumberOfQuestions) {
             nextButton.setText("Zobacz wynik");
 

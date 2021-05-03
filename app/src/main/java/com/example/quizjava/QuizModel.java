@@ -11,7 +11,7 @@ public class QuizModel {
     Long question;
 
 
-    // empty constructor for firebase
+    // pusty konstruktor dla firebase
     public QuizModel() {
     }
 

@@ -10,7 +10,7 @@ public class QuestionModel {
     Long timer;
 
 
-    // for firebase
+    // model danych dla Firebase
     public QuestionModel() {
     }
 

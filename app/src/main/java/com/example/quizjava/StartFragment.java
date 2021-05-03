@@ -30,7 +30,7 @@ public class StartFragment extends Fragment {
     TextView startfeedback;
 
     public StartFragment() {
-        // Required empty public constructor
+        // Pusty konstruktor publiczny
     }
 
 
@@ -38,7 +38,7 @@ public class StartFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+        // Tworzenie layoutu dla tego fragmentu
         return inflater.inflate(R.layout.startfragment, container, false);
     }
     @Override

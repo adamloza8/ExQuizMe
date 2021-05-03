@@ -21,7 +21,7 @@ import android.widget.ProgressBar;
 
 import com.example.quizjava.MVVM.QuizViewModel;
 import com.example.quizjava.Model.QuizModel;
-import com.example.quizjava.MyAdapter.QuizAdapter;
+import com.example.quizjava.Adapter.QuizAdapter;
 import com.example.quizjava.R;
 
 import java.util.List;
@@ -38,14 +38,14 @@ public class ListFragment extends Fragment implements QuizAdapter.OnItemClicked 
     QuizViewModel viewModel;
 
     public ListFragment() {
-        // Required empty public constructor
+        // Pusty konstruktor
     }
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+        // Tworzenie layoutu dla tego fragmentu
         return inflater.inflate(R.layout.listfragment, container, false);
     }
 

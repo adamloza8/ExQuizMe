@@ -39,13 +39,13 @@ public class ResultFragment extends Fragment implements View.OnClickListener {
 
 
     public ResultFragment() {
-        // Required empty public constructor
+        // Pusty konstruktor
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+        // Generowanie layoutu dla tego fragmentu
         return inflater.inflate(R.layout.resultfrag, container, false);
     }
 
@@ -93,8 +93,6 @@ public class ResultFragment extends Fragment implements View.OnClickListener {
 
                     Long total = answerofcorrect + incorrectanswers + missedquestions;
                     Long percent = (answerofcorrect*100)/total;
-
-
 
 
                     correctanwers.setText(answerofcorrect.toString());

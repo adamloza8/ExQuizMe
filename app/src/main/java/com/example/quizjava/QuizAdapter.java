@@ -1,4 +1,4 @@
-package com.example.quizjava.MyAdapter;
+package com.example.quizjava.Adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;
